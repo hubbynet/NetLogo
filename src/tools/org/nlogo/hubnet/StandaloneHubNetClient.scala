@@ -19,7 +19,7 @@ object StandaloneHubNetClient{
     class ConnectionPanel extends JPanel {
       private val name = new JTextField(20){ setText("robot") }
       private val ip = new JTextField(20){ setText("localhost") }
-      private val port = new JTextField(20){ setText("9173") }
+      private val port = new JTextField(20){ setText("8080") }
       setLayout(new BoxLayout(this, BoxLayout.Y_AXIS))
       def makePanel(name: String, tf: JTextField) = new JPanel() {add(new JLabel(name)); add(tf)}
       add(makePanel("Name:", name))
