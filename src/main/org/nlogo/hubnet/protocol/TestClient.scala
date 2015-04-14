@@ -18,7 +18,7 @@ object TestClient{
     new TestClient(userId, clientType, ip, port, pool)
 }
 
-case class TestClient(userId: String, clientType: String="COMPUTER", ip:String="127.0.0.1", port:Int=9173,
+case class TestClient(userId: String, clientType: String="COMPUTER", ip:String="127.0.0.1", port:Int=8080,
                        executor: ExecutorService=TestClient.pool){
   import org.nlogo.hubnet.protocol.{ViewUpdate => ViewUp}
 
