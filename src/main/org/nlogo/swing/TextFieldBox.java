@@ -30,7 +30,7 @@ public strictfp class TextFieldBox extends JPanel {
    * Creates a new TextFieldBox with labels aligned on the left.
    */
   public TextFieldBox() {
-    this(SwingConstants.LEFT, null, null);
+    this(SwingConstants.RIGHT, null, null);
   }
 
   /**
@@ -90,12 +90,12 @@ public strictfp class TextFieldBox extends JPanel {
     labels.add(label);
 
     // Add the label and the textfield in a holder
-    label.setAlignmentX(Component.LEFT_ALIGNMENT);
-    textField.setAlignmentX(Component.LEFT_ALIGNMENT);
+    label.setAlignmentX(Component.RIGHT_ALIGNMENT);
+    textField.setAlignmentX(Component.RIGHT_ALIGNMENT);
     holder.add(label);
     holder.add(Box.createHorizontalStrut(8));
     holder.add((textField));
-    holder.setAlignmentX(Component.LEFT_ALIGNMENT);
+    holder.setAlignmentX(Component.RIGHT_ALIGNMENT);
     holder.add(Box.createHorizontalGlue());
     holder.setMaximumSize(
         new Dimension(holder.getMaximumSize().width, holder.getPreferredSize().height)
